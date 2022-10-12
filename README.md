@@ -1,0 +1,23 @@
+- Intro to Rosette, bitvector language, shallow vs deep embeddings
+- Extracting circuits to Rosette
+    - Representation
+    - Running circuits with concrete values
+    - Running circuits with symbolic values
+- Verilog module equivalence
+    - Definition: behavioral equivalence
+    - Proof strategy, refinement, induction
+- Performance
+    - Mostly concrete execution
+    - Rewrite rules
+    - Solver queries to concretize fields
+- Deterministic start (see https://github.com/anishathalye/notary)
+    - Definition, strategy, and verification query
+    - Performance: concretize
+- Correctness (see https://github.com/anishathalye/knox and https://github.com/anishathalye/knox-hsm)
+    - Definition
+        - Specs, drivers
+    - Compare: SystemVerilog Assertions
+    - Proof strategy, refinement relation
+    - Performance
+        - Deep embedding, small-step semantics for driver language
+        - Hints: concretize, replace, remember, ...
