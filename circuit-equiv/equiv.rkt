@@ -24,7 +24,7 @@
        [else
         (&&
          (bveq (vector-ref-bv data ptr)
-               (extract (sub1 (* 32 (- MAX-CAPACITY i))) (* 32 (- MAX-CAPACITY i 1)) spec-data))
+               (vector-ref spec-data i))
          (rec (add1 i) (bvadd ptr (bv 1 2))))]))))
 
 (define i0 (impl:new-zeroed-fifo_impl_s))
